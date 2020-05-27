@@ -1,0 +1,19 @@
+body{
+    background-image: url("");
+}
+
+
+
+
+.biografia{
+    text-align: right;
+    width: 45%;
+    margin-left: auto;
+}
+ .img2{
+     width: 500px;
+ }
+
+ .sectionhistoria{
+     background-color: rgba(red, green, blue, alpha);
+ }
