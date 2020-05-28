@@ -1,61 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/menu.css">
+	</head>
+	<body >
+		<nav class="navbar">
+			<button class="navbar-toggler ml-auto" type="button">
+			  <span class="navbar-toggler-icon text-white" onclick="openNav()" > | | |</span>
+			</button>
+	  
+			<div id="mySidenav" class="sidenav opacity">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left text-white"></i></a>
+			  <div>
+				  <a href="index.html">Home</a>
+				  <a href="cadastro.html">Cadastro</a>
+				  <a href="login.html">Login</a>
+			  </div>
+			</div>
+        </nav>
 
-    <div class="jumbotron">
-        <h1 class="text-center">IF Informa.</h1>
-         </div>
-
-         
-<section>
-<div class="container mt-5">
-<div class="row col-12 mb-2">
-<div class="col-4">
-<div class="card">
-<img src="https://zap.aeiou.pt/wp-content/uploads/2019/08/ea9375326543d06a63363a20d6d76c80-783x450.jpg" class="rounded img-thumbnail"  width="400px">
-<div class="card-body">
-<p class="card-text">O Universo corresponde ao conjunto de toda a matéria e energia existente. Ele reúne os astros: planetas, cometas, estrelas, galáxias, nebulosas, satélites, dentre outros.É um local imenso e para muitos, infinito. Note que do latim, a palavra universum significa “todo inteiro” ou “tudo em um só”.</p>
-</div>
-</div>
-</div>
-<div class="col-4">
-<div class="card">
-<img src="https://imagens.canaltech.com.br/272145.517755-LQG.jpg" class="rounded img-thumbnail" width="400px">
- <div class="card-body">
- <p class="card-text">A expressão “Universo Paralelo” faz referência a um conceito de física quântica relacionado com a existência de outros universos e outras realidades ainda desconhecidas. Esse conceito está intimamente relacionado com a incompreensão e impossibilidade de assimilar a dimensão do universo.</p>
- </div>
- </div>
- </div>
-
- <div class="col-4">
- <div class="card">
- <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/universo-o-que-e-origem-principais-elementos-e-curiosidade-2.jpg" class="rounded img-thumbnail" width="400px" >
-   <div class="card-body">
-<p class="card-text">Ao observar o céu a olho nú, conseguimos ver uma parte mínima do que chamamos de Universo. Já na observação do céu feita com o auxílio de um telescópio, é possível perceber que o número de corpos celestes é muito maior e também pode-se ver detalhes das formas e da cor dos astros.</p>
-</div>
-</div>
-</div>
-</div>
- </div>
- </section>
-
- <section class="sectionhistoria container">
-    
-    <div class="text-home">
-                    
-        <h2  class="title">Sobre</h2>
-        <p class="biografia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis fuga itaque possimus asperiores illum vitae magni sunt nostrum harum voluptates eligendi officiis repudiandae, omnis optio laborum enim rem unde!</p>
-      
-          <img class="rounded float-left img2 "  src="https://www.rolnews.com.br/tim.php?src=uploads/noticias/2019/11/ifro-campus-cacoal-inaugura-mais-de-r-12-milhoes-em-obras-1574503898.jpeg&w=800&zc=0&q=80" alt="">   
-            
-    </div>
- </section>
-</body>
+        <div class="jumbotron">
+            <h1 class="text-center">IF Informa.</h1>
+        </div>
+        <section>
+            <div class="container mt-5">
+                <div class="row col-12 mb-2">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://zap.aeiou.pt/wp-content/uploads/2019/08/ea9375326543d06a63363a20d6d76c80-783x450.jpg" class="rounded img-thumbnail"  width="400px">
+                            <div class="card-body">
+                            <p class="card-text">O Universo corresponde ao conjunto de toda a matéria e energia existente. Ele reúne os astros: planetas, cometas, estrelas, galáxias, nebulosas, satélites, dentre outros.
+                                É um local imenso e para muitos, infinito. Note que do latim, a palavra universum significa “todo inteiro” ou “tudo em um só”.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://imagens.canaltech.com.br/272145.517755-LQG.jpg" class="rounded img-thumbnail" width="400px">
+                            <div class="card-body">
+                            <p class="card-text">A expressão “Universo Paralelo” faz referência a um conceito de física quântica relacionado com a existência de outros universos e outras realidades ainda desconhecidas. Esse conceito está intimamente relacionado com a incompreensão e impossibilidade de assimilar a dimensão do universo.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/universo-o-que-e-origem-principais-elementos-e-curiosidade-2.jpg" class="rounded img-thumbnail" width="400px" >
+                            <div class="card-body">
+                            <p class="card-text">Ao observar o céu a olho nú, conseguimos ver uma parte mínima do que chamamos de Universo. Já na observação do céu feita com o auxílio de um telescópio, é possível perceber que o número de corpos celestes é muito maior e também pode-se ver detalhes das formas e da cor dos astros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='container'> 
+                <h2  class="text-center text-white">O que é o IF?</h2>
+                <div class="row col-12">
+                    <div class="col-5 mx-auto py-5">
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis fuga itaque possimus asperiores illum vitae magni sunt nostrum harum voluptates eligendi officiis repudiandae, omnis optio laborum enim rem unde!</p>
+                    </div>
+                   <div class="col-5 mx-auto mt-3">
+                        <img class="rounded"  src="https://www.rolnews.com.br/tim.php?src=uploads/noticias/2019/11/ifro-campus-cacoal-inaugura-mais-de-r-12-milhoes-em-obras-1574503898.jpeg&w=800&zc=0&q=80" alt="" width="300px"> 
+                   </div>         
+                </div>
+            </div>
+        </section>
+        
+		<footer class="page-footer font-small bg-dark mt-5">
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-1">
+                        <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Sobre</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-1">
+                        <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Suporte</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-1">
+                    <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Contatos</a></h6>
+                </div>
+            </div>
+            <hr class="rgba-white-light bg-light" style="margin: 0 15%;">
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                <div class="col-md-8 col-12 mt-4">
+                    <p class='text-white' style='line-height: 1.7rem'>AgendaOn é uma forma rápida de marcar horários com diferentes empresas de sua região.</p>
+                </div>
+            </div>
+            </div>
+            <div class="bg-dark-dark text-center p-3 text-white">Copyright &copy; 2020 - Todos os direitos reservados</div>
+		</footer>
+		<script src="js/menu.js"></script>
+	</body>
 </html>

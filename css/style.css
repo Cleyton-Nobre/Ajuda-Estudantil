@@ -17,6 +17,7 @@ body{
 	height: 100vh;
 	position: relative;
 }
+
 .login-page:after{
 content: '';
 position: absolute;

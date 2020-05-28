@@ -9,22 +9,60 @@
 		<link rel="stylesheet" href="css/menu.css">
 	</head>
 	<body>
-	<section class="login-page">
-		<form>
-			<div class="box">
-				<div class="form-head">
-					<h2>LOGIN</h2>
-				</div>
-				<div class="form-body">
-					<input type="text" placeholder="Nome" />
-					<input type="Password" placeholder="Senha" />
-				</div>
-				<div class="form-footer">
-					<button type="submit">Logar</button>
-				</div>
-				<a class='small text-center' href="cadastro.html">Não tenho uma conta!</a>
+		<nav class="navbar">
+			<button class="navbar-toggler ml-auto" type="button">
+			  <span class="navbar-toggler-icon text-white" onclick="openNav()" > | | |</span>
+			</button>
+	  
+			<div id="mySidenav" class="sidenav opacity">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left text-white"></i></a>
+			  <div>
+				  <a href="index.html">Home</a>
+				  <a href="cadastro.html">Cadastro</a>
+				  <a href="login.html">Login</a>
+			  </div>
 			</div>
-		</form>
-	</section>
+		</nav>
+		<section class="login-page">
+			<form>
+				<div class="box">
+					<div class="form-head">
+						<h2>LOGIN</h2>
+					</div>
+					<div class="form-body">
+						<input type="text" placeholder="Nome" />
+						<input type="Password" placeholder="Senha" />
+					</div>
+					<div class="form-footer">
+						<button type="submit">Logar</button>
+					</div>
+					<a class='small text-center' href="cadastro.html">Não tenho uma conta!</a>
+				</div>
+			</form>
+		</section>
+
+		<footer class="page-footer font-small bg-dark">
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-1">
+                        <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Sobre</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-1">
+                        <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Suporte</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-1">
+                    <h6 class="text-uppercase font-weight-bold"><a class='nav-link btn-white' href="#!">Contatos</a></h6>
+                </div>
+            </div>
+            <hr class="rgba-white-light bg-light" style="margin: 0 15%;">
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                <div class="col-md-8 col-12 mt-4">
+                    <p class='text-white' style='line-height: 1.7rem'>AgendaOn é uma forma rápida de marcar horários com diferentes empresas de sua região.</p>
+                </div>
+            </div>
+            </div>
+            <div class="bg-dark-dark text-center p-3 text-white">Copyright &copy; 2020 - Todos os direitos reservados</div>
+		</footer>
+		<script src="js/menu.js"></script>
 	</body>
 </html>
