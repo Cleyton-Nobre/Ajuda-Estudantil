@@ -7,6 +7,19 @@ body{
 	background-size:100%;
 }
 
+nav{
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.opacity{
+  background-color: #343a40;
+}
+
+.no-body{
+	background: none;
+}
+
 *{
 	box-sizing: border-box;
 	outline: none!important;
@@ -19,14 +32,14 @@ body{
 }
 
 .login-page:after{
-content: '';
-position: absolute;
-left: 0px;
-top: 0px;
-height: 100%;
-width: 100%;
-background-color: rgba(0,0,0,.5);
-z-index: 1;
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 1;
 }
 
 .login-page .box{
