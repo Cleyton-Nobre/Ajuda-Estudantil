@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>João da Silva - Contato</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="https://kit.fontawesome.com/4107044750.js" ></script>
+</head>
+<body>
+
+    <nav class="navbar nav1">
+        <div class="ml-5 mt-3">
+            <i class="fab fa-strava fa-2x ml-5 mr-5">Nome</i>
+        </div>
+        <button class="navbar-toggler ml-auto" type="button">
+            <span class="navbar-toggler-icon" onclick="openNav()" ><i class="fas fa-bars fa-2x"></i></span>
+          </button>
+  
+        <div id="mySidenav" class="sidenav opacity">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left text-white"></i></a>
+          <div>
+              <a href="index.html">Home</a>
+              <a href="cadastro.html">Cadastro</a>
+              <a href="login.html">Login</a>
+          </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        <h1 class="titulo-principal">Contato</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <label class="com-icone" for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label class="com-icone" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <label>
+                        <input type="radio" name="assunto" value="Blog">
+                        Blog
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Serviço">
+                        Serviço
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Outro">
+                        Outro
+                        <input type="text" name="outro-assunto">
+                    </label>
+                </fieldset>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </main>
+    
+    
+    
+</body>
+</html>
