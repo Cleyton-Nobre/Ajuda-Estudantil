@@ -12,12 +12,21 @@ nav{
     z-index: 2;
 }
 
+.nav1{
+	background-color: #e9ecef;
+	z-index: 2;
+}
+
 .opacity{
   background-color: #343a40;
 }
 
 .no-body{
 	background: none;
+}
+
+.bg-dark-dark{
+    background-color: #2f3438;
 }
 
 *{
