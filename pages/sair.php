@@ -1,4 +1,4 @@
 <?php
      session_destroy();
-     header('Location:loginAluno.php');
+     header('Location:login.php');
 ?>

@@ -5,6 +5,11 @@
    if($arq=="index.php"){
       $style='no-body';
    }
+
+  /* if(isset($_SESSION['ID_USUARIO'])){
+    header("Location:http://localhost/Ajuda-Estudantil/pages/home.php");
+  }*/
+
 ?>
 <!DOCTYPE html>
 	<html>
@@ -13,8 +18,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://localhost/ajuda-estuda/style/style.css">
-        <link rel="stylesheet" href="http://localhost/ajuda-estuda/style/menu.css">
+        <link rel="stylesheet" href="http://localhost/Ajuda-Estudantil/style/style.css">
+        <link rel="stylesheet" href="http://localhost/Ajuda-Estudantila/style/menu.css">
         <script src="https://kit.fontawesome.com/4107044750.js" ></script>
 
 	</head>
@@ -30,9 +35,9 @@
             <div id="mySidenav" class="sidenav opacity">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left text-white"></i></a>
               <div>
-                  <a href="http://localhost/ajuda-estuda">Home</a>
-                  <a href="http://localhost/ajuda-estuda/pages/cadastro.php">Cadastro</a>
-                  <a href="http://localhost/ajuda-estuda/pages/login.php">Login</a>
+                  <a href="http://localhost/Ajuda-Estudantil">Home</a>
+                  <a href="http://localhost/Ajuda-Estudantil/pages/cadastro.php">Cadastro</a>
+                  <a href="http://localhost/Ajuda-Estudantil/pages/login.php">Login</a>
               </div>
             </div>
         </nav>

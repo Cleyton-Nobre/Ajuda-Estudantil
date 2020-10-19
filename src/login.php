@@ -10,18 +10,17 @@
             $form= new form();
             $user[0]=$form->Email($email);
             $user[1]=$form->SenhaLogin($senha);
-   
-            $senha=md5($senha);
-            $linha= selectRows('*', $table.' WHERE email="'.$email.'" AND senha="'.$senha.'"');
 
            $retorno= $form->erro($user);
             if($retorno ==1){
+            $senha=md5($senha);
+            $linha= selectRows('*', $table.' WHERE email="'.$email.'" AND senha="'.$senha.'"');
+
                 if($linha=1){
                     $new=select('*', $table.' WHERE email="'.$email.'" AND senha="'.$senha.'"');
                    
                     while($aux=mysqli_fetch_array($new)){
-                        $id="id_".$table;
-                        $_SESSION['ID_USUARIO']=$aux["$id"]."-$table";
+                        $_SESSION['ID_USUARIO']=$aux["id"];
                     }
 
                    header('Location:home.php');//logado

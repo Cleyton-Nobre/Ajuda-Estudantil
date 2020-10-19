@@ -1,6 +1,6 @@
         <?php
             include 'header-footer/headerOn.php';
-            require_once '../src/autorizacao.php';
+            require_once '../src/perfil.php';
 
             if(isset($_POST['hidden'])){
             
@@ -8,8 +8,15 @@
                     $$campos=$value;
                 }
     
-                $autoriza=new autorizacao();//Instanciando novo OBJ
-                $autoriza->autoriza($motivo, $senha);
+                $perfil=new perfil();//Instanciando novo OBJ
+                $perfil->perfilUsuario($nome, $senhaAtual, $novaSenha);
+
+                }
+                $retorno=select('*', "usuario WHERE id='".$_SESSION['ID_USUARIO']."'");
+
+                while($aux=mysqli_fetch_array($retorno)){
+                    $nom=$aux["nome"];
+                    $emai=$aux["email"];
                 }
     
                 if(isset($_SESSION['MSG'])){
@@ -17,20 +24,26 @@
                     unset($_SESSION['MSG']);}
         ?>
         
-        <form class="text-center border border-light p-5 col-lg-4 mx-auto border border-dark rounded mt-5" method='post'>
-
-            <h2 class="h1 mb-4">Autorização</h2>
-
-            <textarea name="motivo" id="" cols="10" rows="7" class="form-control mb-4" placeholder="Motivo da saída" maxlength="280"></textarea>
-
-            <input type="password" class="form-control" placeholder="Senha" name='senha'>
-        
-            <button class="btn btn-info my-4 btn-block col-5 mx-auto" type="submit">Confirmar</button>
-
-            <input type="hidden" name='hidden'>
-
-        </form>
-
+        <section class="login-page mb-n5">
+			<form class="" method='post'>
+				<div class="box">
+					<div class="form-head">
+						<h2>PERFIL</h2>
+					</div>
+					<div class="form-body">
+						<input type="text" placeholder="Nome" class="form-control mb-4" name='nome' value='<?=$nom?>'>
+						<input type="email" placeholder="Email" class="form-control mb-4" value='<?=$emai?>' >
+						<input type="Password" placeholder="Senha Atual" class="form-control mb-4" name='senhaAtual'>
+                        <input type="Password" placeholder="Nova Senha" class="form-control mb-4" name='novaSenha'>
+                        
+                        <input type="hidden" name='hidden'>
+					</div>
+					<div class="form-footer">
+						<button type="submit">Editar</button>
+					</div>
+				</div>
+			</form>
+        </section>
         <?php
             include 'header-footer/footer.php';
         ?>

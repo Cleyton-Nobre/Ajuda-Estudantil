@@ -3,7 +3,7 @@
     $servidor="localhost";
     $usuario="root";
     $senha="";
-    $nomeBD="caed";
+    $nomeBD="ajuda_estudantil";
 
     $conexao=mysqli_connect($servidor,$usuario,$senha,$nomeBD);
 

@@ -12,17 +12,6 @@
            }   
    }
 
-   function Sobrenome($nome){
-    if(empty($nome)){
-        return estiloMsg('Sobrenome é um campo obrigatorio!');
-    }else{
-        if(is_numeric($nome) || (strlen($nome)<3)){
-         return estiloMsg('Insira um sobrenome válido!');
-        }else{
-            return 1;
-        }
-    }   
-}
 
    function Email($Email){
            if(empty($Email)){
@@ -63,45 +52,6 @@
             }
         }
     }
-
-         //verificando cpf
-    function Cpf($cpf){
-        $cpf=str_replace(array('.','-','/'), "", $cpf);
-        if(empty($cpf)){
-            return estiloMsg("É CPF um campo obrigatorio!");
-            }else{
-                if(strlen($cpf)!=11){
-                return estiloMsg('Informe um CPF valido!');
-                    }else{
-                        //Verifica se os cpf tem numeros repetidos
-                        if ($cpf == '00000000000' || 
-                            $cpf == '11111111111' || 
-                            $cpf == '22222222222' || 
-                            $cpf == '33333333333' || 
-                            $cpf == '44444444444' || 
-                            $cpf == '55555555555' || 
-                            $cpf == '66666666666' || 
-                            $cpf == '77777777777' || 
-                            $cpf == '88888888888' || 
-                            $cpf == '99999999999') {
-                        return estiloMsg('Informe um CPF valido!');
-                            } else {   
-                                //verifica se o cpf obedece a lei matematica
-                                    for ($t = 9; $t < 11; $t++) {
-                                        for ($d = 0, $c = 0; $c < $t; $c++) {
-                                            $d += $cpf{$c} * (($t + 1) - $c);
-                                        }
-                                        $d = ((10 * $d) % 11) % 10;
-                                    
-                                    }if ($cpf{$c} != $d) {
-                                        return estiloMsg('Informe um CPF valido!');
-                                        }else{
-                                        return 1;
-                                            }
-                            }
-                        } 
-                    }
-        }
 
      
     function erro($msg= array()){///esta função serve para mostrar
