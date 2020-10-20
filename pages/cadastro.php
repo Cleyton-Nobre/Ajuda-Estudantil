@@ -34,7 +34,7 @@
 					<div class="form-footer">
 						<button type="submit">Cadastro</button>
 					</div>
-					<a class='small text-center' href="http://localhost/Ajuda-Estudantil/pages/login.php">Já tenho uma conta!</a>
+					<a class='small text-center' href="<?=URL_BASE?>pages/login.php">Já tenho uma conta!</a>
 				</div>
 			</form>
         </section>

@@ -33,7 +33,7 @@
 					<div class="form-footer">
 						<button type="submit">Logar</button>
 					</div>
-					<a class='small text-center' href="http://localhost/Ajuda-Estudantil/pages/cadastro.php">Não tenho uma conta!</a>
+					<a class='small text-center' href="<?=URL_BASE?>pages/cadastro.php">Não tenho uma conta!</a>
 				</div>
 			</form>
 		</section>
